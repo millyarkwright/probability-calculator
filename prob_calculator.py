@@ -1,10 +1,12 @@
 import copy
 import random
-# Consider using the modules imported above.
 
 class Hat:
   def __init__(self, **kwargs):
+
     self.contents = []
+
+    # Add kwarg values (ie ball colours) to contents list
     for key, value in kwargs.items():
       self.contents.extend([key] * value)
 
