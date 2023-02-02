@@ -25,7 +25,7 @@ class Hat:
   
 def experiment(hat, expected_balls, num_balls_drawn, num_experiments):
 
-  count_sucesses = 0 
+  count_successes = 0 
   expected = []
 
   # Add expected ball values to expected list
@@ -41,10 +41,10 @@ def experiment(hat, expected_balls, num_balls_drawn, num_experiments):
     check = all([matches.count(item) >= expected.count(item) for item in expected])
         
     if check:
-      count_sucesses += 1
+      count_successes += 1
 
   
-  return count_sucesses/num_experiments
+  return count_successes/num_experiments
   
   
   
